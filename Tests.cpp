@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 int main(){
 	string jautajumi [10] = {"1. Kura no funkcijam nenoapalo veselu skaitli uz leju?",
@@ -11,6 +12,8 @@ int main(){
 	  "8. Kura no funkcijam neatgriez skaitla moduli?",
 	  "9. Kuru no pow() funkcijam jaizmanto, lai iegûtu rezultatu 16?",
 	  "10. Kads skaitlis ietilps funkcijas rand()%15-4 generetaja intervla?"};
+	  
+	  string nepareiziJautajumi [10];
 	
 	string atbildesVarianti [10] = {"A)round()\nB)ceil()\nC)floor()\nD)rand()\n",
 	"A)2.0\nB)3.0\nC)2.5\nD)3.3\n",
@@ -30,7 +33,61 @@ int main(){
 	  	cout<<atbildesVarianti [i]<<"\n";
 	  	cout<<"Tava atbilde:";
 	  	cin>>atbilde;
-	  }
-	 
-	 
+	  	if(i=0){
+	  		if(atbilde == "a" || atbilde == "A" || atbilde == "b" || atbilde == "B" ||
+			   atbilde == "D" || atbilde == "D" && atbilde.length()<2){
+	  			pareizoSkaits++;
+			  }else{nepareiziJautajumi[i]=jautajumi[i];}
+			  }
+		if(i=1){
+	  		if(atbilde == "c" || atbilde == "C" || atbilde == "b" || atbilde == "B" ||
+			   atbilde == "D" || atbilde == "D" && atbilde.length()<2){
+	  			pareizoSkaits++;
+			  }else{nepareiziJautajumi[i]=jautajumi[i];}
+			  }
+		if(i=2){
+	  		if(atbilde == "a" || atbilde == "A" || atbilde == "b" || atbilde == "B"  && atbilde.length()<2){
+	  			pareizoSkaits++;
+			  }else{nepareiziJautajumi[i]=jautajumi[i];}
+			  }
+		if(i=3){
+	  		if(atbilde == "c" || atbilde == "C" || atbilde == "b" || atbilde == "B" ||
+			   atbilde == "a" || atbilde == "A" && atbilde.length()<2){
+	  			pareizoSkaits++;
+			  }else{nepareiziJautajumi[i]=jautajumi[i];}
+			  }
+		if(i=4){
+	  		if(atbilde == "a" || atbilde == "A" || atbilde == "c" || atbilde == "C" && atbilde.length()<2){
+	  			pareizoSkaits++;
+			  }else{nepareiziJautajumi[i]=jautajumi[i];}
+			  }
+		if(i=5){
+	  		if( atbilde == "b" || atbilde == "B" ||
+			   atbilde == "D" || atbilde == "D" && atbilde.length()<2){
+	  			pareizoSkaits++;
+			  }else{nepareiziJautajumi[i]=jautajumi[i];}
+			  }
+		if(i=6){
+	  		if(atbilde == "a" || atbilde == "A" || atbilde == "b" || atbilde == "B" && atbilde.length()<2){
+	  			pareizoSkaits++;
+			  }else{nepareiziJautajumi[i]=jautajumi[i];}
+			  }
+		if(i=7){
+	  		if(atbilde == "a" || atbilde == "A" || atbilde == "b" || atbilde == "B" ||
+			   atbilde == "D" || atbilde == "D" && atbilde.length()<2){
+	  			pareizoSkaits++;
+			  }else{nepareiziJautajumi[i]=jautajumi[i];}
+			  }	
+		if(i=8){
+	  		if(atbilde == "c" || atbilde == "C" || atbilde == "b" || atbilde == "B" && atbilde.length()<2){
+	  			pareizoSkaits++;
+			  }else{nepareiziJautajumi[i]=jautajumi[i];}
+			  }
+		if(i=9){
+	  		if(atbilde == "a" || atbilde == "A" || atbilde == "b" || atbilde == "B" && atbilde.length()<2){
+	  			pareizoSkaits++;
+			  }else{nepareiziJautajumi[i]=jautajumi[i];}
+			  }  	  	  	  	  
+		  }
+	
 }
