@@ -103,5 +103,5 @@ int main(){
 	for (int i=0; i<10; i++){	//Izveido ciklu ar skaitîtâju, lai izvadîtu nepareizi atbildçtos jautâjumus.
 		cout<<"\n"<<nepareiziJautajumi[i];	//Izvada masîvu, kurâ saglabâti jautâjumi uz kuriem atbildçts nepareizi.
 	}
-	system("pause");
+	system("pause"); //Neïauj programmai uzreiz aizvçrties pçc koda izpildes, lai lietotâjs redzçtu testa rezultâtus.
 }
