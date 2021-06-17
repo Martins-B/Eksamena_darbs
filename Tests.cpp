@@ -24,7 +24,7 @@ int main(){
 	"A)pow(3,4)\nB)pow(2,4)\nC)pow(16,1)\nD)pow(8,2)\n",
 	"A)-4\nB)8\nC)11\nD)-15\n"}; 
 
-	cout<<"Sveicinati testa, lai parbauditu Jusu zinasanas par matematiskajam funkcijam!\nLai atbildetu, ievadiet atbilzu varianta burtu.\nLai veicas!\n";	//Izvada paziòojumu, lai iepazîstinâtu ar testu.
+	cout<<"Sveicinati testa, lai parbauditu Jusu zinasanas par matematiskajam funkcijam, Jums bus jaatbild uz 10 jautajumiem!\nLai atbildetu, ievadiet atbilzu varianta burtu.\nLai veicas!\n";	//Izvada paziòojumu, lai iepazîstinâtu ar testu.
 
 	string atbilde [10];	//Izveido masîvu kurâ uzglabâs lietotâja ievadîtâs atzîmes.
 	
@@ -97,11 +97,13 @@ int main(){
 	}else{
 		nepareiziJautajumi[9]=jautajumi[9];	//Ja lietotâjs atbildçjis nepareizi, tad ðo jautâjumu pievieno masîvam, kurâ uzglabâ nepareizi atbildçtos jautâjumus.
 	}
-	
-	cout<<"\nApsveicu, Tu atbildeji pareizi uz "<<pareizoSkaits<<" jautajumiem!\n";	//Izvada mainîgo, kurâ saglabâts pareizi atbildçto jautâjumu skaits.
-	cout<<"\nDiemzel, Tu atbildeji nepareizi uz siem jautajumiem: \n";	//Izvada paziòojumu par nepareizi atbildçtiem jautâjumiem.
+	cout<<"___________________________________________________________________\n";	//Izvada lîniju, lai uzlabotu grafisko saskarsni.
+	cout<<"\nApsveicu, Tu atbildeji pareizi uz "<<pareizoSkaits<<" no 10 jautajumiem!\n";	//Izvada mainîgo, kurâ saglabâts pareizi atbildçto jautâjumu skaits.
+	cout<<"\nDiemzel, Tu atbildeji nepareizi uz siem jautajumiem: \n\n";	//Izvada paziòojumu par nepareizi atbildçtiem jautâjumiem.
 	for (int i=0; i<10; i++){	//Izveido ciklu ar skaitîtâju, lai izvadîtu nepareizi atbildçtos jautâjumus.
-		cout<<"\n"<<nepareiziJautajumi[i];	//Izvada masîvu, kurâ saglabâti jautâjumi uz kuriem atbildçts nepareizi.
+		if(nepareiziJautajumi[i]==""){	//Pârbauda vai masîva elements nav tukðs.
+		}else cout<<nepareiziJautajumi[i]<<"\n";	//Izvada tikai tos masîva elementus, kuri nav tukði.
 	}
+	cout<<"\n"; //Izvada papildus rindiòu, lai atdalîtu jautâjumus no programmas beigâm.
 	system("pause"); //Neïauj programmai uzreiz aizvçrties pçc koda izpildes, lai lietotâjs redzçtu testa rezultâtus.
 }
