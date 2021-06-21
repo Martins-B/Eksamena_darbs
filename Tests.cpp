@@ -8,7 +8,7 @@ int main(){
 	  "4. Kura no definicijam neatbilst funkcijai max(x,y)?",
 	  "5. Kurs funkcijas piemers atgriezis rezultatu 5?",
 	  "6. Bez kura virsrakstfaila nav iespejams izmantot funkciju rand()?",
-	  "7. Kurs funkcijas rand() piemers generes nejausu skaitli intervala no 0 lîdz 22?",
+	  "7. Kurs funkcijas rand() piemers generes nejausu skaitli intervala no 0 lidz 22?",
 	  "8. Kura no funkcijam neatgriez skaitla moduli?",
 	  "9. Kuru no pow() funkcijam jaizmanto, lai iegutu rezultatu 16?",
 	  "10. Kads skaitlis ietilps funkcijas rand()%15-4 generetaja intervla?"};
@@ -20,7 +20,7 @@ int main(){
 	"A)max(5,2);\nB)max(5,6);\nC)min(5,9);\nD)min(5,3);\n",
 	"A)<cstring>\nB)<cstdlib>\nC)<cmath>\nD)<ctime>\n",
 	"A)rand()%23;\nB)rand()%23+0;\nC)rand()%1+22;\nD)rand()%1-22;\n",
-	"A)sqrt(x)\nlog(x)\nabs(x)\ncos(x)\n",
+	"A)sqrt(x)\nB)log(x)\nC)abs(x)\nD_cos(x)\n",
 	"A)pow(3,4)\nB)pow(2,4)\nC)pow(16,1)\nD)pow(8,2)\n",
 	"A)-4\nB)8\nC)11\nD)-15\n"}; 
 
