@@ -24,7 +24,7 @@ int main(){
 	"A)pow(3,4)\nB)pow(2,4)\nC)pow(16,1)\nD)pow(8,2)\n",
 	"A)-4\nB)8\nC)11\nD)-15\n"}; 
 
-	cout<<"Sveicinati testa, lai parbauditu Jusu zinasanas par matematiskajam funkcijam, Jums bus jaatbild uz 10 jautajumiem!\nLai atbildetu, ievadiet atbilzu varianta burtu.\nLai veicas!\n";	//Izvada paziòojumu, lai iepazîstinâtu ar testu.
+	cout<<"Sveicinati testa, lai parbauditu Jusu zinasanas par matematiskajam funkcijam, Jums bus jaatbild uz 10 jautajumiem!\nJautajumiem ir vairakas pareizas atbildes.\nLai atbildetu, ievadiet atbilzu variantu burtus, pimeram, AB vai BCA. Ievadiet lielos burtus.\nLai veicas!\n";	//Izvada paziòojumu, lai iepazîstinâtu ar testu.
 
 	string atbilde [10];	//Izveido masîvu kurâ uzglabâs lietotâja ievadîtâs atzîmes.
 	
@@ -38,61 +38,61 @@ int main(){
 	int pareizoSkaits=0;	//Izveido mainîgo, lai skaitîtu pareizi atbildçtus jautâjumus un pieðíir tam vçrtîbu 0.
 	string nepareiziJautajumi [10];	//Izveido masîvu, kurâ uzglabâs nepareizi atbildçtus jautâjumus.
 		
-	if(atbilde[0]== "a" || atbilde[0]== "A" || atbilde[0]== "b" || atbilde[0]== "B" || atbilde[0]== "d" || atbilde[0]== "D"){	//Pârbauda vai lietotâja ievadîta atbilde sakrît ar pareizo atbildi.
+	if(atbilde[0]== "ABD"|| atbilde[0]== "ADB" || atbilde[0]== "BAD" || atbilde[0]== "BDA" || atbilde[0]== "DAB" || atbilde[0]== "DBA"){	//Pârbauda vai lietotâja ievadîta atbilde sakrît ar pareizo atbildi.
 		pareizoSkaits++;	// Ja lietotâjs atbildçjis pareizi, tad palielina pareizi atbildçto jautâjumu skaitu par 1.
 	}else{
 		nepareiziJautajumi[0]=jautajumi[0];	//Ja lietotâjs atbildçjis nepareizi, tad ðo jautâjumu pievieno masîvam, kurâ uzglabâ nepareizi atbildçtos jautâjumus.
 	}
 	
-	if(atbilde[1]=="c" || atbilde[1]=="C" || atbilde[1]=="b" || atbilde[1]=="B" || atbilde[1]=="d" || atbilde[1]=="D"){	//Pârbauda vai lietotâja ievadîta atbilde sakrît ar pareizo atbildi.
+	if(atbilde[1]=="CDB" || atbilde[1]=="CBD" || atbilde[1]=="DCB" || atbilde[1]=="DBC"|| atbilde[1]== "BCA" || atbilde[1]== "BAC"){	//Pârbauda vai lietotâja ievadîta atbilde sakrît ar pareizo atbildi.
 		pareizoSkaits++;	// Ja lietotâjs atbildçjis pareizi, tad palielina pareizi atbildçto jautâjumu skaitu par 1.
 	}else{
 		nepareiziJautajumi[1]=jautajumi[1];	//Ja lietotâjs atbildçjis nepareizi, tad ðo jautâjumu pievieno masîvam, kurâ uzglabâ nepareizi atbildçtos jautâjumus.
 	}
 	
-	if(atbilde[2]=="a" || atbilde[2]=="A" || atbilde[2]=="b" || atbilde[2]=="B"){	//Pârbauda vai lietotâja ievadîta atbilde sakrît ar pareizo atbildi.
+	if(atbilde[2]=="AB" || atbilde[2]=="BA"){	//Pârbauda vai lietotâja ievadîta atbilde sakrît ar pareizo atbildi.
 		pareizoSkaits++;	// Ja lietotâjs atbildçjis pareizi, tad palielina pareizi atbildçto jautâjumu skaitu par 1.
 	}else{
 		nepareiziJautajumi[2]=jautajumi[2];	//Ja lietotâjs atbildçjis nepareizi, tad ðo jautâjumu pievieno masîvam, kurâ uzglabâ nepareizi atbildçtos jautâjumus.
 	}
 	
-	if(atbilde[3]=="a" || atbilde[3]=="A" || atbilde[3]=="b" || atbilde[3]=="B" || atbilde[3]=="c" || atbilde[3]=="C"){	//Pârbauda vai lietotâja ievadîta atbilde sakrît ar pareizo atbildi.
+	if(atbilde[3]=="ABC" || atbilde[3]=="ACB" || atbilde[3]=="BAC" || atbilde[3]=="BCA" || atbilde[3]=="CAB" || atbilde[3]=="CBA"){	//Pârbauda vai lietotâja ievadîta atbilde sakrît ar pareizo atbildi.
 		pareizoSkaits++;	// Ja lietotâjs atbildçjis pareizi, tad palielina pareizi atbildçto jautâjumu skaitu par 1.
 	}else{
 		nepareiziJautajumi[3]=jautajumi[3];	//Ja lietotâjs atbildçjis nepareizi, tad ðo jautâjumu pievieno masîvam, kurâ uzglabâ nepareizi atbildçtos jautâjumus.
 	}
 	
-	if(atbilde[4]=="a" || atbilde[4]=="A" || atbilde[4]=="c" || atbilde[4]=="C"){	//Pârbauda vai lietotâja ievadîta atbilde sakrît ar pareizo atbildi.
+	if(atbilde[4]=="AC" || atbilde[4]=="CA"){	//Pârbauda vai lietotâja ievadîta atbilde sakrît ar pareizo atbildi.
 		pareizoSkaits++;	// Ja lietotâjs atbildçjis pareizi, tad palielina pareizi atbildçto jautâjumu skaitu par 1.
 	}else{
 		nepareiziJautajumi[4]=jautajumi[4];	//Ja lietotâjs atbildçjis nepareizi, tad ðo jautâjumu pievieno masîvam, kurâ uzglabâ nepareizi atbildçtos jautâjumus.
 	}
 	
-	if(atbilde[5]=="b" || atbilde[5]=="B" || atbilde[5]=="d" || atbilde[5]=="D"){	//Pârbauda vai lietotâja ievadîta atbilde sakrît ar pareizo atbildi.
+	if(atbilde[5]=="BD" || atbilde[5]=="DB"){	//Pârbauda vai lietotâja ievadîta atbilde sakrît ar pareizo atbildi.
 		pareizoSkaits++;	// Ja lietotâjs atbildçjis pareizi, tad palielina pareizi atbildçto jautâjumu skaitu par 1.
 	}else{
 		nepareiziJautajumi[5]=jautajumi[5];	//Ja lietotâjs atbildçjis nepareizi, tad ðo jautâjumu pievieno masîvam, kurâ uzglabâ nepareizi atbildçtos jautâjumus.
 	}
 	
-	if(atbilde[6]=="b" || atbilde[6]=="B" || atbilde[6]=="a" || atbilde[6]=="A"){	//Pârbauda vai lietotâja ievadîta atbilde sakrît ar pareizo atbildi.
+	if(atbilde[6]=="BA" || atbilde[6]=="AB"){	//Pârbauda vai lietotâja ievadîta atbilde sakrît ar pareizo atbildi.
 		pareizoSkaits++;	// Ja lietotâjs atbildçjis pareizi, tad palielina pareizi atbildçto jautâjumu skaitu par 1.
 	}else{
 		nepareiziJautajumi[6]=jautajumi[6];	//Ja lietotâjs atbildçjis nepareizi, tad ðo jautâjumu pievieno masîvam, kurâ uzglabâ nepareizi atbildçtos jautâjumus.
 	}
 	
-	if(atbilde[7]=="a" || atbilde[7]=="A" || atbilde[7]=="b" || atbilde[7]=="B" || atbilde[7]=="d" || atbilde[7]=="D"){	//Pârbauda vai lietotâja ievadîta atbilde sakrît ar pareizo atbildi.
+	if(atbilde[7]=="ABD" || atbilde[7]=="ADB" || atbilde[7]=="BAD" || atbilde[7]=="BDA" || atbilde[7]=="DBA" || atbilde[7]=="DAB"){	//Pârbauda vai lietotâja ievadîta atbilde sakrît ar pareizo atbildi.
 		pareizoSkaits++;	// Ja lietotâjs atbildçjis pareizi, tad palielina pareizi atbildçto jautâjumu skaitu par 1.
 	}else{
 		nepareiziJautajumi[7]=jautajumi[7];	//Ja lietotâjs atbildçjis nepareizi, tad ðo jautâjumu pievieno masîvam, kurâ uzglabâ nepareizi atbildçtos jautâjumus.
 	}
 	
-	if(atbilde[8]=="c" || atbilde[8]=="C" || atbilde[8]=="b" || atbilde[8]=="B"){	//Pârbauda vai lietotâja ievadîta atbilde sakrît ar pareizo atbildi.
+	if(atbilde[8]=="CB" || atbilde[8]=="BC"){	//Pârbauda vai lietotâja ievadîta atbilde sakrît ar pareizo atbildi.
 		pareizoSkaits++;	// Ja lietotâjs atbildçjis pareizi, tad palielina pareizi atbildçto jautâjumu skaitu par 1.
 	}else{
 		nepareiziJautajumi[8]=jautajumi[8];	//Ja lietotâjs atbildçjis nepareizi, tad ðo jautâjumu pievieno masîvam, kurâ uzglabâ nepareizi atbildçtos jautâjumus.
 	}
 	
-	if(atbilde[9]=="a" || atbilde[9]=="A" || atbilde[9]=="b" || atbilde[9]=="B"){	//Pârbauda vai lietotâja ievadîta atbilde sakrît ar pareizo atbildi.
+	if(atbilde[9]=="AB" || atbilde[9]=="BA"){	//Pârbauda vai lietotâja ievadîta atbilde sakrît ar pareizo atbildi.
 		pareizoSkaits++;	// Ja lietotâjs atbildçjis pareizi, tad palielina pareizi atbildçto jautâjumu skaitu par 1.
 	}else{
 		nepareiziJautajumi[9]=jautajumi[9];	//Ja lietotâjs atbildçjis nepareizi, tad ðo jautâjumu pievieno masîvam, kurâ uzglabâ nepareizi atbildçtos jautâjumus.
